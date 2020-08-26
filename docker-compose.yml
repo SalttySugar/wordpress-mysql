@@ -20,7 +20,7 @@ services:
             - db
 
     db:
-        image: mariadb:10.5
+        image: mysql:5.7
         volumes: 
             - ./config/database/data:/var/lib/mysql
             - ./config/database/logs:/var/log/mysql
